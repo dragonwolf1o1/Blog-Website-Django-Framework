@@ -1,0 +1,182 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+form h1{
+  color: rgb(45, 119, 3);
+}
+.navbar {
+    width: 100%;
+    background-color: wheat;
+    overflow: auto;
+    position: fixed;
+    top:0;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px 32px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: rgb(240, 201, 129);
+    border-radius: 10px;
+  } 
+  .navbar .active:hover{
+    background-color: rgb(185, 121, 2);
+  }
+  /* Current/active navbar link */
+  .active {
+    background-color:rgb(233, 180, 83);
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+  * {box-sizing: border-box}
+
+
+
+  .center {
+    border: 5px solid;
+    margin: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 80px;
+    border-radius: 7px;
+    box-shadow: 5px 5px rgb(160, 159, 159);
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+    
+  }
+  
+  .center h3{
+    font-weight: bolder;
+    font-size:xx-large;
+    text-align:center;
+    margin-bottom: 20px;
+  }
+  .title{
+    border:2px solid;
+    margin:10px;
+    width:50%; 
+    height: 70px;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(160, 159, 159);
+    padding-left: 10px;
+  }
+  textarea{
+    margin: 50px;
+    width:80%;
+    height: 500px;
+    font-weight: 200;
+    font-size: larger;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    border: 2px solid;
+    box-shadow: 5px 5px rgb(160, 159, 159);
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+form{
+  justify-content: center;
+}
+button{
+  display: block;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: wheat;
+  box-shadow: 3px 3px rgb(160, 159, 159);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.1);
+}
+
+.main{
+  margin-top: 100px;
+  text-align: center;
+  
+}
+
+.post{
+  border: 3px solid;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  margin-top: 80px;
+  border-radius: 7px;
+  box-shadow: 5px 5px rgb(160, 159, 159);
+  margin-bottom: 50px;
+  background-color: antiquewhite;
+  text-align: left;
+}
+.main a{
+  text-decoration: none;
+  color: black;
+}
+.post h2,h4{
+  padding-bottom: 10px;
+}
+
+.single{
+  border: 2px solid;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  margin-top: 80px;
+  border-radius: 4px;
+  box-shadow: 5px 5px rgb(160, 159, 159);
+  justify-content: center;
+  margin-bottom: 50px;
+  height: auto;
+}
+
+.single .btitle{
+  text-align: center;
+  text-decoration: underline;
+}
+.btitle h1{
+  padding-bottom: 35px;
+}
+
+.detail{
+  border: 2px solid;
+  margin: auto;
+  width: auto;
+  padding: 10px;
+  margin-top: 80px;
+  border-radius: 4px;
+  box-shadow: 5px 5px rgb(160, 159, 159);
+  justify-content: center;
+  margin-bottom: 50px;
+  height: auto;
+}
+
+.single .detail h3{
+  font-size: larger;
+  font-weight: 500;
+}
+ .post .date{
+  padding-bottom: 40px;
+  font-weight: 100;
+ }

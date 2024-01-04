@@ -1,0 +1,20 @@
+{% load static %}
+<link href="{% static "style.css" %}" rel='stylesheet'>
+<div class="navbar">
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Saurabh's Blog</a>
+    <a href="/"><i class="fa fa-fw fa-search"></i>Home</a>
+    <a href="/blogs"><i class="fa fa-fw fa-envelope"></i>See Blogs</a>
+  </div>
+
+
+  <div class='single'>
+    <div class='btitle'>
+        <h1>{{ valu.title }}</h1>
+        <h2>{{ valu.date }}</h2>
+    </div>
+    <div class='detail'>
+        <h3>
+            {{ valu.details }}
+        </h3>
+    </div>
+  </div>

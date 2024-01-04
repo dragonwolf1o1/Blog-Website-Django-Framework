@@ -1,0 +1,21 @@
+{% load static %}
+<link href="{% static "style.css" %}" rel='stylesheet'>
+<div class="navbar">
+    <a class="active" href="https://www.linkedin.com/in/saurabh-gupta-02b9371b7"><i class="fa fa-fw fa-home"></i>Saurabh's Blog</a>
+    <a href="/"><i class="fa fa-fw fa-search"></i>Home</a>
+    <a href="blogs"><i class="fa fa-fw fa-envelope"></i>See Blogs</a>
+  </div>
+
+  <div class="center">
+    <form method='POST'>
+      {% for message in messages %}
+      <h1>{{ message }}</h1>
+      {% endfor %}
+      {% csrf_token %}
+        <h3 class='htitle'>Blog's Title</h3>
+        <input class='title' placeholder="Enter Blog's Title" name='title'></input>
+        <h3>Write about Blog</h3>
+        <textarea placeholder="Write about your blog" name='details'></textarea>
+        <button>Submit</button>
+    </form>
+  </div>

@@ -1,0 +1,22 @@
+{% load static %}
+<link href="{% static "style.css" %}" rel='stylesheet'>
+<div class="navbar">
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Saurabh's Blog</a>
+    <a href="/"><i class="fa fa-fw fa-search"></i>Home</a>
+    <a href="blogs"><i class="fa fa-fw fa-envelope"></i>See Blogs</a>
+  </div>
+
+
+<div class='main'>
+    <h1>Your Posts</h1>
+    {% for bb in blog reversed %}
+    <a href="blog/{{ bb.id }}">
+        <div class='post'>
+            <h2>{{ bb.title }}</h2>
+            <h4 class='date'>{{ bb.date }}</h4>
+            <h4><p>{{ bb.details| truncatewords:20 }}</p></h4>
+
+        </div>
+    </a>
+    {% endfor %}
+</div>
